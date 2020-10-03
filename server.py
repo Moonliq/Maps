@@ -103,7 +103,7 @@ def index():#function name is view
       'sa': '#e33617',
       'sak': '#d8122f',
       'kha': '#da7655',
-      'chu': '#101010'
+      'chu': '#101210'
     }
     
     return render_template('index.html', page_title = title, districts=discricts)# handle html and its variables
