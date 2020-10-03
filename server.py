@@ -16,7 +16,7 @@ def index():#function name is view
       "yfo": '#f9768e',
       "skfo": '#9a5597',
       "pfo": '#30cb05',
-      "urfo": '#bac1cc',
+      "urfo": '#682a43',
       "sfo": '#16acdb',
       "dfo": '#fbc520',
       'bel': '#54cbba',
