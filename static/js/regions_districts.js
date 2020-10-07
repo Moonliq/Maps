@@ -3,8 +3,8 @@ ymaps.ready(init);
 function init() {
 
     var map = new ymaps.Map('map', {
-        center: [61, 60],
-        zoom: 3,
+        center: [60, 61],
+        zoom: 1,
         type: null,
         controls: ['zoomControl']
     },{
