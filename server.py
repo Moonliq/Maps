@@ -117,7 +117,7 @@ def layer1():#function name is view
       "urfo": '#682a43',
       "sfo": '#16acdb',
       "dfo": '#fbc520',
-      'bel': '#54cbba',
+      'bel': '#682a43',
       'bry': '#54cbba',
       'vla': '#54cbba',
       'vor': '#f9768e',
