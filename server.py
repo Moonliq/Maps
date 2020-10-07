@@ -119,7 +119,7 @@ def layer1():#function name is view
       "dfo": '#fbc520',
       'bel': '#54cbba',
       'bry': '#54cbba',
-      'vla': '#54cbba',
+      'vla': '#f9768e',
       'vor': '#f9768e',
       'iva': '#54cbba',
       'klu': '#54cbba',
