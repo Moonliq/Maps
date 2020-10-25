@@ -3,13 +3,24 @@ ymaps.ready(init);
 function init() {
 
     var map = new ymaps.Map('map', {
-        center: [60, 61],
-        zoom: 1,
+        center: [65, 100],
+        zoom: 2,
         type: null,
         controls: ['zoomControl']
     },{
         restrictMapArea: [[10, 10], [85,-160]]
     });
+    map.geoObjects
+    .add(new ymaps.Placemark([55.684758, 37.738521], {
+        balloonContent: 'цвет <strong>воды пляжа бонди</strong>'
+    }, {
+        iconLayout: 'default#image',
+ 
+        // Своё изображение иконки метки.
+        iconImageHref: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Location_dot_red.svg/96px-Location_dot_red.svg.png',
+        // Размеры метки.
+        iconImageSize: [15, 15],
+    }))
     map.controls.get('zoomControl').options.set({size: 'small'});
     // Добавим заливку цветом.
     var pane = new ymaps.pane.StaticPane(map, {
@@ -17,28 +28,11 @@ function init() {
             width: '100%', height: '100%', backgroundColor: '#f7f7f7'
         }
     });
+
     map.panes.append('white', pane);
-    // Зададим цвета федеральных округов.
-    // var districtColors = {
-    //     cfo: '#ffff6f',
-    //     szfo: '#54cbba',
-    //     yfo: '#f9768e',
-    //     skfo: '#9a5597',
-    //     pfo: '#30cb05',
-    //     urfo: '#bac1cc',
-    //     sfo: '#16acdb',
-    //     dfo: '#fbc520'
-    // };
+    
     // Зададим подсказки при наведении на федеральный округ.
     var districtsHints = {
-        cfo: 'ЦФО',
-        szfo: 'СЗФО',
-        yfo: 'ЮФО',
-        skfo: 'СКФО',
-        pfo: 'ПФО',
-        urfo: 'УрФО',
-        sfo: 'СФО',
-        dfo: 'ДФО',
         bel: 'Белогородская область'
     };
     // Создадим балун.
@@ -112,4 +106,6 @@ function init() {
             });
         }
     })
+    // events
+    
 }
